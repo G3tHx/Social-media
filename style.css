@@ -3,6 +3,9 @@
     padding: 0; 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Raleway&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pangolin&family=Raleway&family=Rubik+Iso&display=swap');
+
 @font-face {
 	font-family: 'Montserrat';
 	src: url(Montserrat-MediumItalic.ttf);
@@ -22,7 +25,7 @@ body {
 	height: 100%; 
 	padding: 0px; 
 	margin: 0px; 
-	background: url(img/background.png) no-repeat;
+	background: url(img/background1.png) no-repeat;
 	-moz-background-size: 100%; /* Firefox 3.6+ */
 	-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
 	-o-background-size: 100%; /* Opera 9.6+ */
@@ -77,8 +80,9 @@ body {
     background: #e5d3bd00; 
     border: 2px solid #e81e2500; 
 	flex: 0 0 auto; 
-	color: rgb(36, 36, 36);
-	font-family: 'Montserrat', sans-serif;
+	color: rgb(255, 255, 255);
+	font-family: 'Pangolin', cursive;
+    line-height: 300%;
 }
 
 h1 {
@@ -103,7 +107,7 @@ a {
     align-items: center;
     text-align: left;
     letter-spacing: 0.02em;
-    color: #3FD7F6;
+    color: #f63fe7;
     text-decoration: none;
     position: relative;
 	display: inline-block;
@@ -119,13 +123,9 @@ p {
 
 /* Графические объекты */ 
 
-.line {
-    margin-top: 0;
-}
-
 .rectangle {
     margin-top: 0;
-    margin-right: 0;
+    margin-right: 5px;
     margin-left: 20px;
     margin-bottom: 0;
     height: 15px;
@@ -133,7 +133,7 @@ p {
 }
 
 .header-imgage {
-    height: 50px;
+    height: 100px;
 }
 
 
@@ -170,13 +170,18 @@ svg{
     border-radius: 50%; 
 }
 
+nav, li{
+    margin-left: 40px;
+}
+
+
 /* Кнопки */
 
 
 
 .active {
     color: #ffffff;
-    background: #3FD7F6;
+    background: #f63fde;
     opacity: 1;
     border-radius: 5px;
     font-family: 'Montserrat';
@@ -186,6 +191,72 @@ svg{
     line-height: 25px;
 }
 
-nav, li{
-    margin-left: 40px;
+.flag {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+/* Таблица */
+
+table {
+	border-collapse: collapse;
+	width: 1500px;
+	color: rgba(255, 255, 255, 0);
+	font-size: 20px;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #dddddd00;
+	color: white;
+	font-size: 20px;
+}
+
+th {
+	background-color: #f2f2f200;
+	color: white;
+	font-size: 20px;
+}
+
+/* Раздел "Новости" */
+
+.news-bg {
+    border-radius: 15px;
+    width: 1500px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 15px;
+    text-align: left;
+}
+
+.news-text{
+    font-family: "Montserrat", normal;
+	font-size: 25px;
+    width: 1100px;
+    padding: 15px;
+    color: rgb(85, 82, 82);
+    display:inline-block;
+}
+
+.news-image {
+    display: inline-block;
+    height: 300px;
+    margin: 20px;
+    width: 300px;
+}
+
+/* Фреймы/Формы */
+
+iframe, form {
+	text-align:center;
+	padding: 20px; 
+	margin: 0px; 
+	background: #e5d3bd00; 
+	border: 2px solid #e81e2500; 
+	flex: 0 0 auto; 
+	color: white;
+	font-family: 'Aware', normal;
+	line-height: 350%;
 }

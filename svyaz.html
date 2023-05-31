@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Социальные сети</title>
+
+	</head>
+	
+	<body>
+        <p>Что вы думаете о сайте? Нам важно знать!</p><br>
+        <form id="contact-form" action="script.php" method="post">
+            <input type="hidden" name="redirect" value="http://www.opera.com" />
+            <ul>
+                <li>
+                    <label for="name">Ваше Имя:</label>
+                    <input type="text" name="name" id="name" value="" />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" value="" />
+                </li>
+                <li>Пожалуйста, выберите ваше отношение к сайту:
+                    <ul>
+                      <li><label for="angry">Хорошее</label> <input type="checkbox" name="angry" id="angry" value="angry" checked="checked"></li>
+                      <li><label for="sad">Среднее</label> <input type="checkbox" name="sad" id="sad" value="sad"></li>
+                      <li><label for="happy">Ниже среднего</label> <input type="checkbox" name="happy" id="happy" value="happy"></li>
+                      <li><label for="ambivalent">Ужасное</label> <input type="checkbox" name="ambivalent" id="ambivalent" value="ambivalent"></li>
+                    </ul>
+                  </li>
+                <li>
+                    <label for="comments">Распишите, почему вы так думаете:</label>
+                    <textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="submit" />
+                    <input type="reset" value="reset" />
+                </li>
+            </ul>
+        </form>
+	</body>
+	
+</html>
